@@ -1,4 +1,4 @@
-import background from '../assets/background.jpeg';
+import background from '../../assets/background.jpeg';
 import './HomePage.scss';
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,6 @@ const HomePage = (props) => {
 					<Link to='/films'>Films</Link>
 				</div>
 			</div>
-			
 			<img src={background} alt='star-wars background'/>
 		</div>
 	)

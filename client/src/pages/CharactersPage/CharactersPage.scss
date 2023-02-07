@@ -1,0 +1,31 @@
+.characters-page {
+	font-family: "Poller One";
+    display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+    font-size: 2em;
+	.characters {
+		position: absolute; 
+        z-index: 1;
+		p {
+			align-self: center;
+		}
+		li{
+			font-size: 0.5em;
+		}
+	}
+	img {
+		background-size: cover;
+		height: 100vh;
+		width: 100vw;
+		z-index: -1;
+		opacity: 0.4;
+	}
+	.error{
+		color: red;
+	}
+}
+
+
+
