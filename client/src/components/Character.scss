@@ -1,0 +1,20 @@
+.character {
+    font-family: "Poller One";
+	display: flex;
+	flex-direction: row; 
+
+    img {
+        height: 100vh;
+        width: 50vw;
+    }
+
+	.character-info { 
+		margin:1em;
+	}
+}
+
+.error {
+	font-family: "Poller One";
+	color: red;
+	padding: 1em; 
+}

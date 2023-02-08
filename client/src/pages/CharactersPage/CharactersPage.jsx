@@ -1,7 +1,6 @@
 import axios from 'axios';
 import {useEffect, useState} from 'react'; 
 import './CharactersPage.scss'; 
-import Characters from '../../components/Characters';
 import {Link } from 'react-router-dom'; 
 import background from '../../assets/background.jpeg';
 
@@ -24,14 +23,15 @@ const CharactersPage = () => {
 	<div className='characters-page'>
 		<img src={background} alt='star-wars background'/>
 		<div className='characters'>
-			{ data && data.map(character => (
+			{ data && 
+			data.map(character => (
 					<ul>
-					<li>
-						<Link to={`/charaters/${character.name}`}>
-							{character.name}
-						</Link>
-					</li>
-				</ul>
+						<li key={character.name}>
+							<Link to={`/characters/${character.name}`}>
+								{character.name}
+							</Link>
+						</li>
+					</ul>
 				)) 
 			}
 			{error && <p className='error'>{error}</p>}
