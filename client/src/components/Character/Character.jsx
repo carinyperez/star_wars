@@ -19,7 +19,7 @@ const Character = () => {
 	}, []); 
 
 	const apiCharactersRequest = () => {
-		const url = 'http://localhost:3000/api/characters'
+		const url = '/api/characters'
 		axios.get(url)
 		.then(response => setData(response.data.results.find(character => character.name === id)))
 		.catch(error => setError(error.message))
