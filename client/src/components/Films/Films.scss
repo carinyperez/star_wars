@@ -1,0 +1,10 @@
+.films{
+	display: flex;
+	flex-direction: column;
+	a{
+		margin-bottom: 1em;
+	}
+	.error {
+		color: red;
+	}
+}

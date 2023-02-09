@@ -23,6 +23,7 @@ const CharactersPage = () => {
 	<div className='characters-page'>
 		<img src={background} alt='star-wars background'/>
 		<div className='characters'>
+			<p>Characters</p>
 			{ data && 
 			data.map(character => (
 					<ul>
