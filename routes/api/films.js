@@ -5,7 +5,6 @@ const axios = require('axios');
 // @route GET api/films 
 // @desc get films 
 router.get('/', (req, res) => {
-	console.log(req);
 	axios.get('https://swapi.dev/api/films')
 	.then(response => res.send(response.data)).catch(err => res.send(err.message))
 })

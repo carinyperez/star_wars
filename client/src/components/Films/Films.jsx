@@ -6,7 +6,6 @@ import './Films.scss';
 const Films = ({films}) => {
 	const [data, setData] = useState([]);
 	const [error, setError] = useState('');
-	console.log(films); 
 
 	const apiFilmRequest = (film) => {
 		axios.get(film)
@@ -31,7 +30,7 @@ const Films = ({films}) => {
 				</Link>)
 				}
 				{error && <p className='error'>{error}</p>}
-		</div>
+			</div>
 		</>
 		
 	)

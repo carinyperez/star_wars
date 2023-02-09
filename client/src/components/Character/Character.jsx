@@ -26,7 +26,6 @@ const Character = () => {
 	}
 
 	const importImage = (id) => {
-		console.log(id.replace(/[^a-z0-9]/gi, '').toLowerCase()); 
 		import(`../../assets/${id.replace(/[^a-z0-9]/gi, '').toLowerCase()}.jpeg`).then(image => setImage(image.default));
 	}
 	
