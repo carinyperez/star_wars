@@ -2,7 +2,7 @@ import background from '../../assets/background.jpeg';
 import './HomePage.scss';
 import { Link } from "react-router-dom";
 
-const HomePage = (props) => {
+const HomePage = () => {
 	return(
 		<div className='homepage'>
 			<div className='header'>
