@@ -11,14 +11,13 @@ const Films = ({films}) => {
 		Promise.all(films.map(async film => {
 			try {
 				const response = await axios.get(film);
-				return setData(data => [...data, response.data]);
+				setData(data => [...data, response.data]);
 			} catch (error) {
-				return setError(error.message);
+				setError(error.message);
 			}
 		}))
 	}, [])
-	
-	
+
 	return (
 		<>
 			<h1>Films</h1>
